@@ -2,11 +2,11 @@ hieralookup
 ===========
 
 A web service for doing hiera lookups based on facts that are handed over in the request.
-Highly stripped down from dalen/hieralookup but the credits go to him for the initial implementation!
+Highly stripped down from dalen/hieralookup so the main credits go to him for the initial implementation!
 
 I push a set of fact values instead of going to puppetdb as i don't have it in my env currently
 and i only need some values for my hierarachy in the first place. So i just push these over in the 
-request and query hiera based on that.
+request and query hiera based on that. In this implementation there is just the kernel fact but it can obviously be extended to how many facts are required for any specific environment.
 
 Forward lookup
 --------------
