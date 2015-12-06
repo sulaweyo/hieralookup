@@ -1,4 +1,17 @@
-<VirtualHost *:80>
-  PassengerAppRoot /usr/share/hieralookup
-  DocumentRoot /usr/share/hieralookup
+Listen 8800
+<VirtualHost *:8800>
+  ServerName yourhost
+  ServerAdmin root@localhost
+
+  DocumentRoot /var/www/hieralookup/public
+  <Directory    /var/www/hieralookup/public>
+    Order       allow,deny
+    Allow       from all
+  </Directory>
+  
+  ## Logging
+  ErrorLog "/var/log/apache2/hiera_error.log"
+  CustomLog "/var/log/apache2/access.log" combined 
+
 </VirtualHost>
+
