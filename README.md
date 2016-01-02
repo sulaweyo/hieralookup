@@ -17,6 +17,12 @@ Lookup
 - __key__ is the hiera key to look up
 - All the additional arguments are used as fact values. 
 
+
 Query
 --------------
-The query folder contains a Ruby class that can be used to query this service from a fact.
+The query folder contains a simple Ruby class that can be used to query this service from a fact.
+
+Service
+--------------
+The service can either be running in passenger or standalone. If you want to run in passenger you find a sample config in the 'passenger' folder.
+If you want to run a standalone service there is the hieralookup_service module which deploys the lookup service and starts it as a service.

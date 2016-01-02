@@ -1,0 +1,19 @@
+{
+	"author": "Sledge Sulaweyo",
+	"dependencies": [],
+	"license": "Apache-2.0",
+	"name": "sledge-hieralookup_service",
+	"operatingsystem_support": [{
+			"operatingsystem": "Ubuntu"
+		}
+	],
+	"project_page": "https://github.com/sulaweyo/hieralookup",
+	"requirements": [],
+	"source": "https://github.com/sulaweyo/hieralookup",
+	"summary": "Install hieralookup as standalone service.",
+	"tags": [ "hieralookup",
+		"standalone",
+		"service"
+	],
+	"version": "0.1.0"
+}
